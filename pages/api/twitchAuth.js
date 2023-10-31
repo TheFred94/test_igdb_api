@@ -19,6 +19,7 @@ const getToken = async () => {
       }
     );
 
+    console.log(response);
     return response.data;
   } catch (error) {
     throw new Error("Failed to get Twitch access token");
